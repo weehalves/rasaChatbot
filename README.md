@@ -14,8 +14,10 @@ Antes de rodar a aplicação, certifique-se de ter os seguintes pré-requisitos 
 ## Instalação
 
 1. **Clone o repositório**:
-   git clone https://github.com/weehalves/rasaChatbot
-   cd rasaChatbot
+   
+git clone https://github.com/weehalves/rasaChatbot
+   
+cd rasaChatbot
 
 2. Crie e ative um ambiente virtual (opcional, mas recomendado):
 
