@@ -1,0 +1,69 @@
+version: "3.1"
+
+nlu:
+  - intent: saudacao
+    examples: |
+      - Olá
+      - Oi
+      - Bom dia
+      - Boa tarde
+      - tudo bem?
+      - hey
+      - e aí
+      - como vai?
+
+  - intent: suporte_tecnico
+    examples: |
+      - Estou tendo problemas com meu dispositivo
+      - Meu software não está funcionando
+      - Preciso de ajuda técnica
+      - Meu computador não liga
+      - Estou com um erro no aplicativo
+      - falar com suporte tecnico
+
+  - intent: vendas
+    examples: |
+      - Estou interessado em comprar um produto
+      - Você pode me ajudar com informações sobre vendas?
+      - Quais são as opções de produtos?
+      - Quero saber sobre o preço de um item
+      - Como faço para comprar?
+      - Quero falar com a equipe de vendas
+      - Quero falar com o comercial
+      - falar sobre cobrancas
+
+  - intent: cobrancas
+    examples: |
+      - Preciso de informações sobre minha cobrança
+      - Há um erro na minha fatura
+      - Como posso pagar minha conta?
+      - Meu pagamento não foi processado
+      - Quero esclarecer uma cobrança
+      - quero falar com a equipe de cobrancas
+      - Meu boleto
+      - falar sobre cobrancas
+
+  - intent: despedida
+    examples: |
+      - tchau
+      - até logo
+      - até mais
+      - valeu
+      - fui
+      - um abraço
+
+  - intent: geral
+    examples: |
+      - como você está?
+      - pode me ajudar?
+      - quero saber mais
+      - me conte sobre os serviços
+      - o que você pode fazer?
+
+  - intent: desconhecido
+    examples: |
+      - [!@#$%]
+      - isso não faz sentido
+      - o que você está dizendo?
+      - que dia é hoje?
+      - não sei

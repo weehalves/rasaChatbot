@@ -1,0 +1,40 @@
+version: "3.1"
+
+rules:
+  - rule: Handle suporte técnico
+    steps:
+      - intent: suporte_tecnico
+      - action: utter_suporte_tecnico
+
+  - rule: Handle vendas
+    steps:
+      - intent: vendas
+      - action: utter_vendas
+
+  - rule: Handle cobranças
+    steps:
+      - intent: cobrancas
+      - action: utter_cobrancas
+
+  - rule: Handle saudação
+    steps:
+      - intent: saudacao
+      - action: utter_saudacao
+
+  - rule: Handle despedida
+    steps:
+      - intent: despedida
+      - action: utter_despedida
+
+  - rule: Handle geral
+    steps:
+      - intent: geral
+      - action: utter_geral
+  - rule: Respond to unknown messages
+    steps:
+      - intent: desconhecido
+      - action: utter_desconhecido
+  - rule: Handle fallback when intent is unclear
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback

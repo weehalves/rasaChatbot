@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - suporte_tecnico
+  - vendas
+  - cobrancas
+  - saudacao
+  - despedida
+  - geral
+  - fallback
+  - nlu_fallback
+
+responses:
+  utter_suporte_tecnico:
+    - text: "Claro, vou te encaminhar para o Suporte Técnico."
+  utter_vendas:
+    - text: "Ótimo! Fico feliz pelo seu interesse. Estou te encaminhando para equipe de Vendas."
+  utter_cobrancas:
+    - text: "Estou encaminhando você para a equipe de Cobranças. Eles vão cuidar da sua solicitação."
+  utter_saudacao:
+    - text: "Olá! Como posso ajudar você hoje?"
+    - text: "Oi! Tudo bem? Como posso ajudar?"
+    - text: "Olá! Em que posso te ajudar?"
+  utter_despedida:
+    - text: "Até mais! Se precisar de algo, estou por aqui."
+    - text: "Tchau! Espero ter ajudado."
+    - text: "Até logo! Volte sempre que precisar."
+  utter_geral:
+    - text: "Desculpe, não entendi completamente sua solicitação. Poderia me dar mais detalhes para que eu possa ajudar melhor?"
+    - text: "Estou aqui para ajudar, poderia esclarecer sua dúvida?"
+  utter_desconhecido:
+    - text: "desconhecido"
+  utter_fallback:
+    - text: "desconhecido"
+
+actions:
+  - action_suporte_tecnico
+  - action_vendas
+  - action_cobrancas

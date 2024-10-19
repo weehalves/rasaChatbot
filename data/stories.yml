@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+  - story: Support Technical Request
+    steps:
+      - intent: suporte_tecnico
+      - action: utter_suporte_tecnico
+
+  - story: Sales Inquiry
+    steps:
+      - intent: vendas
+      - action: utter_vendas
+
+  - story: Billing Inquiry
+    steps:
+      - intent: cobrancas
+      - action: utter_cobrancas
+
+  - story: Greeting Inquiry
+    steps:
+      - intent: saudacao
+      - action: utter_saudacao
+
+  - story: Farewell Inquiry
+    steps:
+      - intent: despedida
+      - action: utter_despedida
+
+  - story: General Inquiry
+    steps:
+      - intent: geral
+      - action: utter_geral
+
+  - story: Unknown Intent
+    steps:
+      - intent: desconhecido
+      - action: utter_desconhecido
+
+  - story: Full Conversation
+    steps:
+      - intent: saudacao
+      - action: utter_saudacao
+      - intent: suporte_tecnico
+      - action: utter_suporte_tecnico
+      - intent: despedida
+      - action: utter_despedida
